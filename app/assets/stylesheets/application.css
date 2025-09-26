@@ -1,15 +1,15 @@
 /*
- * Este é um arquivo de manifesto que será compilado em application.css.
+ * This is a manifest file that'll be compiled into application.css.
  *
- * Com o Propshaft, os assets são servidos eficientemente sem etapas de pré-processamento. Você ainda pode incluir
- * estilos de toda a aplicação neste arquivo, mas lembre-se de que a precedência do CSS seguirá a ordem
- * cascata padrão, significando que estilos declarados mais tarde no documento ou manifesto substituirão os anteriores,
- * dependendo da especificidade.
+ * With Propshaft, assets are served efficiently without preprocessing steps. You can still include
+ * application-wide styles in this file, but keep in mind that CSS precedence will follow the standard
+ * cascading order, meaning styles declared later in the document or manifest will override earlier ones,
+ * depending on specificity.
  *
- * Considere organizar os estilos em arquivos separados para manutenibilidade.
+ * Consider organizing styles into separate files for maintainability.
  */
 
-/* Reset e Estilos Base */
+/* Reset and Base Styles */
 * {
   box-sizing: border-box;
 }
@@ -38,7 +38,7 @@ h2 {
   font-size: 1.5em;
 }
 
-/* Sistema de Grid (inspirado no Bootstrap) */
+/* Grid System (Bootstrap-inspired) */
 .row {
   display: flex;
   margin-bottom: 10px;
@@ -73,7 +73,7 @@ h2 {
   padding: 0 10px;
 }
 
-/* Estilos de Botões */
+/* Button Styles */
 .btn {
   display: inline-block;
   padding: 10px 20px;
@@ -109,7 +109,7 @@ h2 {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Container de Filmes */
+/* Movies Container */
 #movies {
   background-color: white;
   border-radius: 8px;
@@ -129,31 +129,7 @@ h2 {
   text-decoration: underline;
 }
 
-/* Destaque da coluna ordenada */
-.sorted {
-  background-color: #f39c12 !important;
-  color: white !important;
-  padding: 5px 10px;
-  border-radius: 3px;
-  font-weight: bold;
-}
-
-/* Links do cabeçalho na tabela */
-.row:first-child a {
-  color: white;
-  text-decoration: none;
-  display: block;
-  padding: 5px;
-  border-radius: 3px;
-  transition: background-color 0.3s;
-}
-
-.row:first-child a:hover {
-  background-color: rgba(255, 255, 255, 0.2);
-  color: white;
-}
-
-/* Página de Detalhes do Filme */
+/* Movie Details Page */
 #metadata {
   background-color: white;
   padding: 20px;
@@ -192,7 +168,7 @@ h2 {
   color: #555;
 }
 
-/* Estilos de Formulários */
+/* Form Styles */
 .form {
   background-color: white;
   padding: 30px;
@@ -247,7 +223,7 @@ input[type="submit"]:hover {
   box-shadow: 0 4px 8px rgba(0,0,0,0.2);
 }
 
-/* Estilo do Seletor de Data */
+/* Date Select Styling */
 select[name*="release_date"] {
   display: inline-block;
   width: auto;
@@ -255,7 +231,7 @@ select[name*="release_date"] {
   min-width: 80px;
 }
 
-/* Design Responsivo */
+/* Responsive Design */
 @media (max-width: 768px) {
   .row {
     flex-direction: column;
